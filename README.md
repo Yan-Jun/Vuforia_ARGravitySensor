@@ -12,7 +12,7 @@ Introduction
 About gravity sensor
 ============
 
-
+<img src="https://github.com/Yan-Jun/Vuforia_ARGravitySensor/blob/master/Image/Gravity%20Sensor.png" height="300" width="500" />
 
 重力感測器可以提供重力大小的三維向量，可以參考Android Developer 的介紹。
 https://developer.android.com/guide/topics/sensors/sensors_motion#sensors-motion-grav
@@ -32,6 +32,7 @@ Vuforia + Gravity Sensor
 為：Vector3(-GravitySensor.x, GravitySensor.z, -GravitySensor.y)
 
 由於重力是對應到Unity物件上，並不是在攝影機上，X軸和Y軸要為負值。
+最後再將轉換的向量給物件的Rigidbody velocity就完成了！
 
 ```C#
 
@@ -47,4 +48,12 @@ Vector3 TransGravity = new Vector3(-m_gravitySensor.x, m_gravitySensor.z, -m_gra
 m_rigidbody.velocity = TransGravity;
   
 ```
-詳細請至 GravitySensor.cs 中查看。
+
+* 詳細請至 GravitySensor.cs 中查看。
+Vuforia_ARGravitySensor/Project/Assets/Scripts/GravitySensor.cs
+* 輸出的APK測試檔案
+Vuforia_ARGravitySensor/Project/Output/ARGravity.apk
+
+
+Other information
+============
