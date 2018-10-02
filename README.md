@@ -34,6 +34,7 @@ Vuforia + Gravity Sensor
 
 首先要將感測器啟動，並取得重力向量。由於感測器的方向軸與Unity不相同，要自己轉換方向。
 轉換方式很簡單，當手機螢幕朝上時上方為Z軸，對應到Unity物件上方為Y軸，所以對物件施加重力時轉換方式
+
 為：Vector3(-GravitySensor.x, GravitySensor.z, -GravitySensor.y)
 
 由於重力是對應到Unity物件上，並不是在攝影機上，X軸和Y軸要為負值。
@@ -55,10 +56,10 @@ m_rigidbody.velocity = TransGravity;
 ```
 
 * 詳細請至 GravitySensor.cs 中查看。
-Vuforia_ARGravitySensor/Project/Assets/Scripts/GravitySensor.cs
+ https://github.com/Yan-Jun/Vuforia_ARGravitySensor/blob/master/Project/Assets/Scripts/GravitySensor.cs
 
 * 輸出的APK測試檔案
-Vuforia_ARGravitySensor/Project/Output/ARGravity.apk
+ https://github.com/Yan-Jun/Vuforia_ARGravitySensor/blob/master/Project/Output/ARGravity.apk
 
 
 Other Scripts Information
