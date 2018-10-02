@@ -8,10 +8,8 @@ Introduction
   
 * 專案測試時一定要在手機上測試，手機上才有重力感測器
 
-<img src="https://github.com/Yan-Jun/Vuforia_ARGravitySensor/blob/master/Image/Screenshot.jpg" height="315" width="225" />
-<img src="https://github.com/Yan-Jun/Vuforia_ARGravitySensor/blob/master/Image/Screenshot02.jpg" height="315" width="225" />
-<img src="https://github.com/Yan-Jun/Vuforia_ARGravitySensor/blob/master/Image/Screenshot03.jpg" height="315" width="225" />
-<img src="https://github.com/Yan-Jun/Vuforia_ARGravitySensor/blob/master/Image/Screenshot04.jpg" height="315" width="225" />
+<img src="https://github.com/Yan-Jun/Vuforia_ARGravitySensor/blob/master/Image/Screenshot.jpg" height="315" width="225" /><img src="https://github.com/Yan-Jun/Vuforia_ARGravitySensor/blob/master/Image/Screenshot02.jpg" height="315" width="225" />
+<img src="https://github.com/Yan-Jun/Vuforia_ARGravitySensor/blob/master/Image/Screenshot03.jpg" height="315" width="225" /><img src="https://github.com/Yan-Jun/Vuforia_ARGravitySensor/blob/master/Image/Screenshot04.jpg" height="315" width="225" />
 
 
 About Gravity Sensor
