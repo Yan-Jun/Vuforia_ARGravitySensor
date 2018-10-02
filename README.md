@@ -12,12 +12,14 @@ Introduction
 About gravity sensor
 ============
 
-<img src="https://github.com/Yan-Jun/Vuforia_ARGravitySensor/blob/master/Image/Gravity%20Sensor.png" height="300" width="500" />
+<img src="https://github.com/Yan-Jun/Vuforia_ARGravitySensor/blob/master/Image/Gravity%20Sensor.png" height="512" width="1024" />
 
 重力感測器可以提供重力大小的三維向量，可以參考Android Developer 的介紹。
+
 https://developer.android.com/guide/topics/sensors/sensors_motion#sensors-motion-grav
 
 Unity API 中的 Input.gyro.gravity 可以取得重力感測器。
+
 https://docs.unity3d.com/ScriptReference/Gyroscope-gravity.html
 
 
