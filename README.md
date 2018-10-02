@@ -12,11 +12,11 @@ Introduction
 About gravity sensor
 ============
 
-<img src="https://github.com/Yan-Jun/Vuforia_ARGravitySensor/blob/master/Image/Gravity%20Sensor.png" height="512" width="1024" />
-
 重力感測器可以提供重力大小的三維向量，可以參考Android Developer 的介紹。
 
 https://developer.android.com/guide/topics/sensors/sensors_motion#sensors-motion-grav
+
+<img src="https://github.com/Yan-Jun/Vuforia_ARGravitySensor/blob/master/Image/Gravity%20Sensor.png" height="418" width="962" />
 
 Unity API 中的 Input.gyro.gravity 可以取得重力感測器。
 
@@ -25,7 +25,8 @@ https://docs.unity3d.com/ScriptReference/Gyroscope-gravity.html
 
 Vuforia + Gravity Sensor
 ============
-事前AR環境設定 - 世界中心為裝置攝影機、攝影機X軸旋轉90度
+事前AR Unity 環境設定 - 切換手機平台、世界中心為裝置攝影機、攝影機X軸旋轉90度
+* Platform = Android
 * World Center Mode = DEVICE
 * ARCamera Rotation x = 90
 
@@ -57,5 +58,12 @@ Vuforia_ARGravitySensor/Project/Assets/Scripts/GravitySensor.cs
 Vuforia_ARGravitySensor/Project/Output/ARGravity.apk
 
 
-Other information
+Other Scripts Information
 ============
+攝影機對焦模式設定(Camera Focus Mode)、閃光燈設定(Flash Torch)、重啟相機設定(Restart Camera)。
+* Vuforia Core Samples 套件內的 Common > Scripts > CameraSettings.cs
+https://library.vuforia.com/articles/Solution/Working-with-the-Camera#Camera-Focus-Modes
+
+攝影機擴展辨識(Extended Tracking)。
+* Vuforia Core Samples 套件內的 Common > Scripts > TrackableSettings.cs
+https://library.vuforia.com/articles/Training/Extended-Tracking.html
