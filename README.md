@@ -56,6 +56,7 @@ m_rigidbody.velocity = TransGravity;
 
 * 詳細請至 GravitySensor.cs 中查看。
 Vuforia_ARGravitySensor/Project/Assets/Scripts/GravitySensor.cs
+
 * 輸出的APK測試檔案
 Vuforia_ARGravitySensor/Project/Output/ARGravity.apk
 
