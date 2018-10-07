@@ -28,16 +28,15 @@ https://docs.unity3d.com/ScriptReference/Gyroscope-gravity.html
 Vuforia + Gravity Sensor
 ============
 事前AR Unity 環境設定 - 切換手機平台、世界中心為裝置攝影機、攝影機X軸旋轉90度
-* Platform = Android
+* **Platform = Android**
 * World Center Mode = DEVICE
 * ARCamera Rotation x = 90
 
 首先要將感測器啟動，並取得重力向量。由於感測器的方向軸與Unity不相同，要自己轉換方向。
 轉換方式很簡單，當手機螢幕朝上時上方為Z軸，對應到Unity物件上方為Y軸，所以對物件施加重力時轉換方式
 
-為：Vector3(-GravitySensor.x, GravitySensor.z, -GravitySensor.y)
+為：Vector3(GravitySensor.x, GravitySensor.z, GravitySensor.y)
 
-由於重力是對應到Unity物件上，並不是在攝影機上，X軸和Y軸要為負值。
 最後再將轉換的向量給物件的Rigidbody velocity就完成了！
 
 ```C#
@@ -50,7 +49,7 @@ Input.gyro.enabled = true;
 // Use a gravity sensor and convert vector 
 
 m_gravitySensor = Input.gyro.gravity;
-Vector3 TransGravity = new Vector3(-m_gravitySensor.x, m_gravitySensor.z, -m_gravitySensor.y);
+Vector3 TransGravity = new Vector3(m_gravitySensor.x, m_gravitySensor.z, m_gravitySensor.y);
 m_rigidbody.velocity = TransGravity;
   
 ```
