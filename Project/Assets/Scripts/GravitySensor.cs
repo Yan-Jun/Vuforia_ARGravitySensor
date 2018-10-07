@@ -35,7 +35,7 @@ public class GravitySensor : MonoBehaviour, ITrackableEventHandler
 
         // Use a gravity sensor and convert vector 
         m_gravitySensor = Input.gyro.gravity;
-        Vector3 TransGravity = new Vector3(-m_gravitySensor.x, m_gravitySensor.z, -m_gravitySensor.y);
+        Vector3 TransGravity = new Vector3(m_gravitySensor.x, m_gravitySensor.z, m_gravitySensor.y);
         m_rigidbody.velocity = TransGravity;
     }
 
